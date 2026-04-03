@@ -1,63 +1,16 @@
-# Saarthi AI Web
+# React + Vite
 
-Landing page for Saarthi AI, an India-focused AI navigator for government schemes.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Structure
+Currently, two official plugins are available:
 
-- `index.html`: Primary landing page served at `/` on Vercel.
-- `saarthi-ai.html`: Source-equivalent landing page file (kept for compatibility).
-- `vercel.json`: Optional static hosting config.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Local Development
+## React Compiler
 
-This project is a static HTML page, so no build step is required.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Option 1: Open Directly
+## Expanding the ESLint configuration
 
-Open `saarthi-ai.html` in your browser.
-
-### Option 2: Run a Local Static Server (recommended)
-
-If you have Node.js:
-
-```bash
-npx serve .
-```
-
-Then visit the local URL shown in the terminal.
-
-## Deploy to Vercel
-
-### One-time Setup
-
-1. Push this repo to GitHub.
-2. In Vercel, click **Add New → Project**.
-3. Import this repository.
-4. Framework preset: **Other** (or leave auto-detected).
-5. Build Command: **(leave empty)**.
-6. Output Directory: **(leave empty)**.
-7. Deploy.
-
-### Why It Works
-
-- The app is static and requires no server runtime.
-- Vercel serves `index.html` at the root path by default.
-
-## Optional: Deploy with Vercel CLI
-
-```bash
-npm i -g vercel
-vercel login
-vercel
-```
-
-For production deployment:
-
-```bash
-vercel --prod
-```
-
-## Notes
-
-- Theme toggle, animations, and form interactions are fully client-side.
-- Waitlist entries are currently stored only in in-memory JavaScript (`signups` array) and reset on page refresh.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
