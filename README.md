@@ -4,8 +4,9 @@ Landing page for Saarthi AI, an India-focused AI navigator for government scheme
 
 ## Project Structure
 
-- `saarthi-ai.html`: Main landing page markup, styles, and interactions.
-- `vercel.json`: Vercel routing config so `/` serves the landing page.
+- `index.html`: Primary landing page served at `/` on Vercel.
+- `saarthi-ai.html`: Source-equivalent landing page file (kept for compatibility).
+- `vercel.json`: Optional static hosting config.
 
 ## Local Development
 
@@ -40,7 +41,7 @@ Then visit the local URL shown in the terminal.
 ### Why It Works
 
 - The app is static and requires no server runtime.
-- `vercel.json` rewrites `/` to `saarthi-ai.html`, so the landing page loads at the root domain.
+- Vercel serves `index.html` at the root path by default.
 
 ## Optional: Deploy with Vercel CLI
 
