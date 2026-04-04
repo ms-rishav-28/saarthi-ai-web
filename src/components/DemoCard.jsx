@@ -1,29 +1,29 @@
-import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { Search, FileText, Send, Radio, MessageSquare } from 'lucide-react';
 
 const agentSteps = [
   {
-    icon: '🔍', iconClass: 'step-green', name: 'Eligibility Scout',
+    icon: <Search size={20} />, iconClass: 'step-green', name: 'Eligibility Scout',
     desc: 'Found 6 schemes you qualify for based on your profile, state, and life event.',
     tags: ['PM Matru Vandana (₹5,000)', 'PM Kisan (₹6,000/yr)', 'PM-JAY Health Cover']
   },
   {
-    icon: '📄', iconClass: 'step-blue', name: 'Document Orchestrator',
+    icon: <FileText size={20} />, iconClass: 'step-blue', name: 'Document Orchestrator',
     desc: 'Pulled Aadhaar, land records & bank passbook from DigiLocker. Auto-filled 4 of 5 forms. One document missing: birth certificate.',
     tags: ['DigiLocker ✓', '1 doc needed']
   },
   {
-    icon: '📤', iconClass: 'step-orange', name: 'Submission Agent',
+    icon: <Send size={20} />, iconClass: 'step-orange', name: 'Submission Agent',
     desc: 'Submitted 3 applications to central portal. Booked CSC appointment in Nashik for remaining 2 (physical signature required).',
     tags: ['3 submitted', 'CSC appt: Apr 7']
   },
   {
-    icon: '📡', iconClass: 'step-purple', name: 'Tracker Agent',
+    icon: <Radio size={20} />, iconClass: 'step-purple', name: 'Tracker Agent',
     desc: 'Monitoring all 3 applications weekly. Will alert if SLA is breached and auto-draft grievance to CPGRAMS.',
     tags: ['Auto-follow-up', 'CPGRAMS ready']
   },
   {
-    icon: '💬', iconClass: 'step-teal', name: 'Communication Agent',
+    icon: <MessageSquare size={20} />, iconClass: 'step-teal', name: 'Communication Agent',
     desc: 'Sending all updates on WhatsApp in Hindi. Estimated ₹11,000 in total benefits in next 90 days.',
     tags: ['WhatsApp • Hindi', '₹11,000 expected']
   },

@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef } from 'react';
+import { CheckCircle2, Lock } from 'lucide-react';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -106,10 +107,11 @@ export default function WaitlistSection() {
           <motion.div
             className="waitlist-count"
             animate={{ opacity: 1 }}
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
           >
             {submitted
-              ? `✅ ${signupCount} people on the waitlist so far.`
-              : '🔒 Your data is safe. DPDP 2023 compliant. No spam, ever.'
+              ? <><CheckCircle2 size={16} /> {signupCount} people on the waitlist so far.</>
+              : <><Lock size={16} /> Your data is safe. DPDP 2023 compliant. No spam, ever.</>
             }
           </motion.div>
         </div>

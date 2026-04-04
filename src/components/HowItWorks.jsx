@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Compass, Search, FileText, Send, Radio, MessageSquare } from 'lucide-react';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -41,12 +42,12 @@ const steps = [
 ];
 
 const agentNodes = [
-  { icon: '🧭', iconClass: 'step-green', label: 'Saarthi Planner Agent', sub: 'Orchestrator' },
-  { icon: '🔍', iconClass: 'step-blue', label: 'Eligibility Scout', sub: null },
-  { icon: '📄', iconClass: '', bgStyle: { background: '#EEF5EE' }, label: 'Document Orchestrator', sub: null },
-  { icon: '📤', iconClass: 'step-orange', label: 'Submission Agent', sub: null },
-  { icon: '📡', iconClass: 'step-purple', label: 'Tracker Agent', sub: null },
-  { icon: '💬', iconClass: 'step-teal', label: 'Communication Agent (22 langs)', sub: null },
+  { icon: <Compass size={18} />, iconClass: 'step-green', label: 'Saarthi Planner Agent', sub: 'Orchestrator' },
+  { icon: <Search size={18} />, iconClass: 'step-blue', label: 'Eligibility Scout', sub: null },
+  { icon: <FileText size={18} />, iconClass: '', bgStyle: { background: '#EEF5EE' }, label: 'Document Orchestrator', sub: null },
+  { icon: <Send size={18} />, iconClass: 'step-orange', label: 'Submission Agent', sub: null },
+  { icon: <Radio size={18} />, iconClass: 'step-purple', label: 'Tracker Agent', sub: null },
+  { icon: <MessageSquare size={18} />, iconClass: 'step-teal', label: 'Communication Agent (22 langs)', sub: null },
 ];
 
 export default function HowItWorks() {
