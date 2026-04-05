@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { Search, FileText, Send, Radio, MessageSquare } from 'lucide-react';
 
 const agentSteps = [
